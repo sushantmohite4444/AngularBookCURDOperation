@@ -1,2 +1,2 @@
 # AngularBookCURDOperation
-Angular project with bootstrap cass html basic CURD operation
+Angular project with bootstrap css html  CURD operation
