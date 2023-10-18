@@ -1,0 +1,22 @@
+<p>bookcreate works!</p>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4 p-4 shadow-lg rounded">
+            <form [formGroup]="bookcreateform" (ngSubmit)="createNewbook()">
+                <label class="for-lable">Id</label>
+                <input type="text" class="form-control" formControlName="id">
+                <label class="for-lable">Name</label>
+                <input type="text" class="form-control" formControlName="name">
+                <label class="for-lable">Category</label>
+                <input type="text" class="form-control" formControlName="category">
+                <label class="for-lable">Writer</label>
+                <input type="text" class="form-control" formControlName="writer">
+               
+                <input type="submit" class="btn mt-2 ">
+                
+            </form>
+        </div>
+    </div>
+
+
+</div>

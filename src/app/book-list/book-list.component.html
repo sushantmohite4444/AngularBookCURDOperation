@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container text-center shadow-lg rounded  mt-5">
+
+      <br >
+    
+            <h3 class=" my-4" >Book list</h3>
+        
+        
+        <table class="table table-borderded text center">
+            <tr>
+                <th>Book Id</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Author</th>
+            </tr>
+            <br>
+            <tbody>
+                <tr *ngFor="let book of books">
+                    <td>{{book.id}}</td>
+                    <td>{{book.name}}</td>
+                    <td>{{book.category}}</td>
+                    <td>{{book.writer}}</td>
+                    <td>
+                        <button class="btn btn-danger m-2" (click)="deleteBook(book.id)">Delete</button>
+                        <button class="btn btn-info px-4" [routerLink]='["/Editbook/",book.id,"edit"]'>Edit</button>
+                        <!-- <button class="btn btn-success" [ routerLink]='["/Editbook/",book.id,"edit"]'> Edit</button> -->
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a class="btn btn-outline-success " routerLink="/Addbook"> Add Book</a></p>
+    </div>
+    
+</body>
+
+</html>
